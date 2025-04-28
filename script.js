@@ -85,7 +85,7 @@ const renderPagination = (totalProducts) => {
 
   if (currentPage > 1) {
     const prevButton = document.createElement('button');
-    prevButton.textContent = 'Previous';
+    prevButton.textContent = '<';
     prevButton.onclick = () => changePage(currentPage - 1);
     pagination.appendChild(prevButton);
   }
@@ -100,7 +100,7 @@ const renderPagination = (totalProducts) => {
 
   if (currentPage < totalPages) {
     const nextButton = document.createElement('button');
-    nextButton.textContent = 'Next';
+    nextButton.textContent = '>';
     nextButton.onclick = () => changePage(currentPage + 1);
     pagination.appendChild(nextButton);
   }
