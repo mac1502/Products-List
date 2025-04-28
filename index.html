@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Product List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="category-filter">
+        <div class="filter-buttons">
+      <button class="filter-btn" onclick="setCategory('all')">All</button>
+    </div>
+<select class="filter-dropdown" onchange="setCategory(this.value)">
+        <option value="all">All</option>
+      </select>
+    </div>
+    <div class="product-list" id="productList"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
