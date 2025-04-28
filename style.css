@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
     padding: 20px;
 }
@@ -117,17 +117,20 @@ body {
     .product-list {
         grid-template-columns: repeat(4, 1fr);
     }
-        .filter-dropdown {
-            display: none;
-        }
+    .filter-dropdown {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .product-list {
         grid-template-columns: repeat(3, 1fr);
     }
-    .filter-dropdown {
+    .filter-buttons {
         display: none;
+    }
+    .filter-dropdown {
+        display: block;
     }
 }
 
@@ -135,11 +138,11 @@ body {
     .product-list {
         grid-template-columns: repeat(2, 1fr);
     }
-        .filter-buttons {
-            display: none;
-        }
+    .filter-buttons {
+        display: none;
+    }
     
-        .filter-dropdown {
-            display: block;
-        }
+    .filter-dropdown {
+        display: block;
+    }
 }
