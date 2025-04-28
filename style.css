@@ -70,6 +70,8 @@ body {
 .product-card h3 {
     font-size: 18px;
     margin: 10px 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .product-card p {
