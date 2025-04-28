@@ -62,10 +62,10 @@ const renderProducts = () => {
     productCard.classList.add('product-card');
     productCard.innerHTML = `
       <img src="${product.image}" alt="${product.title}">
-      <h3>${product.title}</h3>
       <p class="category">${product.category}</p>
-      <p class="price">$${product.price.toFixed(2)}</p>
+      <p class="title">${product.title}</p>
       <p class="rating">Rating: ${product.rating.rate} / 5</p>
+      <p class="price">$${product.price.toFixed(2)}</p>
       <div class="actions">
         <input type="number" min="1" value="1">
         <button onclick="addToCart(${product.id})">Add to Cart</button>
